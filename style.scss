@@ -51,7 +51,6 @@ body {
     }
 
     .page-container {
-        width: 70%;
         background: #ffffff;
         margin: 1.6rem auto;
         padding: 4rem 4rem;
@@ -59,14 +58,29 @@ body {
         border-top-right-radius: 40px;
         overflow-x: hidden;
 
+        @media screen {
+            width: 70%;
+            margin: 1.6rem auto;
+        }
 
-        @media screen and (max-width: 860px) {
+        @media print {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+
+
+        @media (max-width: 860px) {
             width: 100%;
             background: #ffffff;
             margin: 0 auto;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
         }
+
+        
+       
+
 
 
         div.intro-text {

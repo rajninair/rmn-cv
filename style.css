@@ -46,7 +46,6 @@ body::after {
   z-index: -3;
 }
 body .page-container {
-  width: 70%;
   background: #ffffff;
   margin: 1.6rem auto;
   padding: 4rem 4rem;
@@ -54,7 +53,19 @@ body .page-container {
   border-top-right-radius: 40px;
   overflow-x: hidden;
 }
-@media screen and (max-width: 860px) {
+@media screen {
+  body .page-container {
+    width: 70%;
+    margin: 1.6rem auto;
+  }
+}
+@media print {
+  body .page-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 860px) {
   body .page-container {
     width: 100%;
     background: #ffffff;
