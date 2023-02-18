@@ -55,7 +55,6 @@ body .page-container {
 @media (max-width: 860px) {
   body .page-container {
     width: 80%;
-    margin: auto;
   }
 }
 @media screen {
